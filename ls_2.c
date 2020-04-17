@@ -122,12 +122,6 @@ int main(int argc, char** argv)
         free(dir_ent.file_name);
     }
     cleanup(args, f);
-
-
-    int f2;
-
-    f2 = open("/home/crisc/c_files/test_block.bin", O_WRONLY | O_CREAT);
-    write(f2, full_block, 4096);
     exit(EXIT_SUCCESS);
 }
 
